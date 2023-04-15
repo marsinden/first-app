@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    @if ( $name == "Denis" )
-    <h1>Hello Admin</h1>
-    @else
-    <h1>Hello User</h1>
-    @endif 
-</body>
-</html>
+<x-base>
+
+<x-slot name='name'>
+    Denis
+</x-slot>    
+
+<x-slot name="contents">
+<h1 class="text-4xl font-bold">Home</h1>
+<p class="mt-4 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque in saepe ea eius ex recusandae impedit earum! Aperiam quibusdam quos voluptate quisquam cum saepe incidunt odio delectus! Eius, obcaecati asperiores.</p>
+</x-slot>
+</x-base>
